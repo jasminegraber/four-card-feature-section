@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+	font-weight: 200;
+}
+
+h1,
+h2 {
+	font-size: 20px;
+}
+
+header {
+	text-align: center;
+}
+
+section {
+	border-radius: 1.5%;
+	box-shadow: 1px 2px 15px 9px hsl(229, 6%, 95%);
+}
+
+.supervisor-card {
+	border-top: 3.5px solid hsl(180, 62%, 55%);
+}
+
+.team-builder-card {
+	border-top: 3.5px solid hsl(0, 78%, 62%);
+}
+
+.karma-card {
+	border-top: 3.5px solid hsl(34, 97%, 64%);
+}
+
+.calculator-card {
+	border-top: 3.5px solid hsl(212, 86%, 64%);
+}
+
+p {
+	font-weight: 200;
+}
