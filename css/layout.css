@@ -30,3 +30,24 @@ h1,
 h2 {
 	margin: 0;
 }
+
+section h3,
+section p {
+	margin-top: 0;
+}
+
+section p {
+	margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+	body {
+		max-width: 768px;
+	}
+
+	main {
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		margin: 0 auto;
+	}
+}

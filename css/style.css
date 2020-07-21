@@ -13,6 +13,12 @@ h2 {
 	font-size: 20px;
 }
 
+h1,
+h2,
+h3 {
+	color: hsl(234, 12%, 34%);
+}
+
 header {
 	text-align: center;
 }
@@ -40,4 +46,9 @@ section {
 
 p {
 	font-weight: 200;
+	color: hsl(229, 6%, 66%);
+}
+
+section p {
+	font-size: 14px;
 }
