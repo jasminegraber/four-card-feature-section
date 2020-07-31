@@ -1,4 +1,9 @@
+/* BASE STYLE  */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+* {
+	box-sizing: border-box;
+}
 
 body {
 	font-family: 'Poppins', sans-serif;
@@ -56,4 +61,103 @@ section p {
 footer {
 	text-align: center;
 	font-size: 12px;
+}
+
+/* LAYOUT STYLE  */
+
+body {
+	max-width: 375px;
+	margin: auto;
+}
+
+main {
+	display: grid;
+	grid-gap: 40px;
+	margin: 25px;
+}
+
+header {
+	margin: 50px 25px;
+}
+
+section {
+	height: 250px;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+img {
+	max-width: 60px;
+	align-self: flex-end;
+}
+
+h1,
+h2 {
+	margin: 0;
+}
+
+section h3,
+section p {
+	margin-top: 0;
+}
+
+section p {
+	margin-bottom: 50px;
+}
+
+footer {
+	margin-top: 50px;
+}
+
+/* MEDIA QUERIES  */
+
+@media (min-width: 768px) {
+	body {
+		max-width: 768px;
+	}
+
+	main {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 30px;
+	}
+
+	header p {
+		max-width: 375px;
+		margin: 20px auto 0 auto;
+	}
+}
+
+@media (min-width: 1200px) {
+	body {
+		max-width: 1200px;
+	}
+
+	header p {
+		max-width: 500px;
+		margin: 20px auto 0 auto;
+	}
+
+	main {
+		grid-auto-columns: 1fr;
+		grid-auto-rows: 1fr;
+	}
+
+	.team-builder-card {
+		grid-area: 1/2/3/3;
+	}
+
+	.supervisor-card {
+		grid-area: 2/1/4/2;
+	}
+
+	.karma-card {
+		grid-area: 3/2/5/3;
+	}
+
+	.calculator-card {
+		grid-area: 2/3/4/4;
+	}
 }
